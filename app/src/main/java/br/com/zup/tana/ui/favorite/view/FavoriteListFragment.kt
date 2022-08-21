@@ -68,6 +68,7 @@ class FavoriteListFragment : Fragment() {
             }
         })
     }
+
     fun goToDetail(dish: Dish){
         val bundle = bundleOf("DISH_KEY" to dish)
         NavHostFragment.findNavController(this).navigate(R.id.action_favoriteFragment_to_detailFragment,bundle)

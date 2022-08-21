@@ -58,7 +58,11 @@ class DishesUseCase {
     fun getCartList(): ViewState<List<Dish>> {
         return try {
             val list = repository.getCartList()
-            ViewState.success(list)
+            if (list.isEmpty()) {
+                ViewState.empty(list)
+            } else {
+                ViewState.success(list)
+            }
         } catch (e: Exception) {
             ViewState.error(null, e.message)
         }

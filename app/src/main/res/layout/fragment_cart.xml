@@ -78,7 +78,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:gravity="center"
-        android:text="@string/empty_favlist"
+        android:text="@string/empty_cart"
         android:textColor="@color/gray"
         android:textSize="@dimen/text_15"
         android:layout_marginTop="@dimen/size_5"

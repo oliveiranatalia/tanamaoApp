@@ -9,7 +9,7 @@ import com.squareup.picasso.Picasso
 
 class CartAdapter(
     private var cartList: List<Dish>,
-    private val clickDetail: (item: Dish) -> Unit
+    private val clickDetail: (dish: Dish) -> Unit
 ) : RecyclerView.Adapter<CartAdapter.ViewHolder>(){
 
     class ViewHolder(val binding: CartItemBinding) : RecyclerView.ViewHolder(binding.root) {
