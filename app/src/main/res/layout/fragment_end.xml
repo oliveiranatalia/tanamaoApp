@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/dark_gray"
+    android:id="@+id/container"
+    tools:context=".ui.end.view.EndFragment">
+
+    <TextView
+        android:id="@+id/tvClosedOrderTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/closed_order"
+        android:textColor="@color/light_gray"
+        android:textSize="@dimen/text_30"
+        android:layout_marginTop="@dimen/size_50"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <TextView
+        android:id="@+id/tvClosedOrderDescrip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/description_closed"
+        android:textColor="@color/light_gray"
+        android:textSize="@dimen/text_18"
+        android:textAlignment="center"
+        android:layout_marginTop="@dimen/size_20"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvClosedOrderTitle"/>
+
+    <Button
+        android:id="@+id/bvNewOrder"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/new_order"
+        android:textColor="@color/dark_gray"
+        android:backgroundTint="@color/light_gray"
+        android:layout_marginTop="@dimen/size_40"
+        app:layout_constraintTop_toBottomOf="@id/tvClosedOrderDescrip"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <ImageView
+        android:id="@+id/tvLogo"
+        android:layout_width="@dimen/size_70"
+        android:layout_height="@dimen/size_70"
+        android:src="@drawable/white_logo"
+        android:contentDescription="@string/round_logo"
+        android:layout_marginTop="@dimen/size_50"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/bvNewOrder"/>
+
+    <ImageView
+        android:id="@+id/tvLogoLetters"
+        android:layout_width="@dimen/size_200"
+        android:layout_height="@dimen/size_100"
+        android:src="@drawable/tana_whitelogo"
+        android:contentDescription="@string/letters_logo"
+        android:layout_marginTop="@dimen/size_10"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvLogo"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

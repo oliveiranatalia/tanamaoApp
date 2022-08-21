@@ -1,0 +1,43 @@
+<resources>
+    <string name="app_name">tanámao</string>
+    <string name="scan_qrcode">&#x20;&#x20;&#x20;Scan QR Code&#x20;&#x20;&#x20;</string>
+    <string name="item_fav">&#x20;foi favoritado!</string>
+    <string name="item_disfav">&#x20;foi desfavoritado!</string>
+    <string name="fav_error">Não foi possível favoritar. Tente novamente.</string>
+    <string name="disfav_error">Não foi possível desfavoritar. Tente novamente.</string>
+    <string name="empty_favlist">Não há items favoritados!</string>
+    <string name="item_title">Título do alimento</string>
+    <string name="item_desc">Descrição do alimento</string>
+    <string name="item_price">R$&#x20;</string>
+    <string name="add_cart">&#x20;&#x20;&#x20;adicionar na sacola&#x20;&#x20;&#x20;</string>
+    <string name="item_add">O item foi adicionado à sacola!</string>
+    <string name="item_remove">O item foi removido da sacola!</string>
+    <string name="empty_cart">Não há items na sacola!</string>
+    <string name="cart_error">Não foi possível adicionar à sacola. Tente novamente.</string>
+    <string name="total">Total R$&#x20;</string>
+    <string name="close_order">&#x20;&#x20;fechar pedido&#x20;&#x20;</string>
+    <string name="closed_order">Pedido Fechado!</string>
+    <string name="new_order">&#x20;&#x20;novo pedido&#x20;&#x20;</string>
+    <string name="item_qtd">&#x20;x</string>
+    <string name="item_less">&#x20;&#x20;&#x20; - &#x20;&#x20;</string>
+    <string name="item_qtd_detail">&#x20;&#x20;1&#x20;&#x20;</string>
+    <string name="item_more">&#x20;&#x20; + &#x20;&#x20;</string>
+
+    <!-- Descriptions -->
+
+    <string name="qrcode">Imagem de um qrcode</string>
+    <string name="round_logo">Círculo com um traço da direita</string>
+    <string name="description_closed">Aguarde que iremos até \na sua mesa.</string>
+    <string name="letters_logo">Imagem com as letras do logo "Ta ná mão"</string>
+    <string name="cutlery_ic">Ícone de uma garfo e uma faca cruzados em branco</string>
+    <string name="heart_ic">Ícone de uma coração sem preenchimento com contorno em branco</string>
+    <string name="cart_ic">Ícone de um carrinho de mercado em branco</string>
+    <string name="qrcode_ic">Ícone de um qrcode com uma lupa</string>
+    <string name="fav_ic">Ícone de coração na cor cinza</string>
+    <string name="disfav_ic">ícone de coração sem preenchimento com contorno preto</string>
+    <string name="menu_icon_title">Cardápio</string>
+    <string name="fav_icon_title">Favoritos</string>
+    <string name="cart_icon_title">Sacola</string>
+    <string name="empty_file">Imagem com uma representação de um arquivo de imagem com uma arvore, nuvens e estrelas ao lado</string>
+
+</resources>
