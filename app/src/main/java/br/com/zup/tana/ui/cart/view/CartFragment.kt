@@ -60,6 +60,7 @@ class CartFragment : Fragment() {
                     adapter.updateList(it.data as MutableList<Dish>)
                     binding.rvCart.isVisible = true
                     binding.pbLoading.isVisible = false
+                    totalOrder(it.data)
                 }
                 Status.LOADING -> {
                     binding.pbLoading.isVisible = true
@@ -78,7 +79,12 @@ class CartFragment : Fragment() {
         NavHostFragment.findNavController(this).navigate(R.id.action_cartFragment_to_detailFragment,bundle)
     }
 
-    fun totalOrder(){
-
+    fun totalOrder(list: List<Dish>){
+        var value = 0.0
+        for(dish in list){
+            value = (value + dish.value * dish.qtd)
+        }
+        val string = getString(R.string.total)
+        binding.bvTotalOrder.text = string + (value.toString())
     }
 }

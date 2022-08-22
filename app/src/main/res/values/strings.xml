@@ -8,7 +8,7 @@
     <string name="empty_favlist">Não há items favoritados!</string>
     <string name="item_title">Título do alimento</string>
     <string name="item_desc">Descrição do alimento</string>
-    <string name="item_price">R$&#x20;</string>
+    <string name="item_price">R$ &#x20;</string>
     <string name="add_cart">&#x20;&#x20;&#x20;adicionar na sacola&#x20;&#x20;&#x20;</string>
     <string name="item_add">O item foi adicionado à sacola!</string>
     <string name="item_remove">O item foi removido da sacola!</string>
@@ -18,10 +18,10 @@
     <string name="close_order">&#x20;&#x20;fechar pedido&#x20;&#x20;</string>
     <string name="closed_order">Pedido Fechado!</string>
     <string name="new_order">&#x20;&#x20;novo pedido&#x20;&#x20;</string>
-    <string name="item_qtd">&#x20;x</string>
-    <string name="item_less">&#x20;&#x20;&#x20; - &#x20;&#x20;</string>
-    <string name="item_qtd_detail">&#x20;&#x20;1&#x20;&#x20;</string>
-    <string name="item_more">&#x20;&#x20; + &#x20;&#x20;</string>
+    <string name="item_qtd">x</string>
+    <string name="item_less">–</string>
+    <string name="item_qtd_detail">1</string>
+    <string name="item_more">+</string>
 
     <!-- Descriptions -->
 

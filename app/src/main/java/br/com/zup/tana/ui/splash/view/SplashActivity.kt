@@ -4,7 +4,6 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import br.com.zup.tana.databinding.ActivitySplashBinding
-import br.com.zup.tana.ui.home.view.MainActivity
 import br.com.zup.tana.ui.qrcode.QRCodeReaderActivity
 import java.util.*
 
@@ -25,7 +24,7 @@ class SplashActivity : AppCompatActivity() {
 
     private fun jump() {
         timer.cancel()
-        startActivity(Intent(this, MainActivity::class.java))
+        startActivity(Intent(this, QRCodeReaderActivity::class.java))
         this.finish()
     }
 }

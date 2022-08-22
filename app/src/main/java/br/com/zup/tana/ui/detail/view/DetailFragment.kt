@@ -42,8 +42,30 @@ class DetailFragment : Fragment() {
             binding.tvItemDescription.text = it.description
             val value = "${getString(R.string.item_price)} ${it.value}"
             binding.tvItemPrice.text = value
+            binding.tvQuantity.text = it.qtd.toString()
             updateColor(dish)
         }
+        var num = 1
+        binding.tvLess.setOnClickListener{
+            num = num - 1
+            if(num > 0 ){
+                binding.tvQuantity.text = num.toString()
+                if (dish != null) {
+                    dish.qtd = num
+                }
+            }
+        }
+
+        binding.tvMore.setOnClickListener{
+            num = num + 1
+            if(num > 0 ){
+                binding.tvQuantity.text = num.toString()
+                if (dish != null) {
+                    dish.qtd = num
+                }
+            }
+        }
+
         binding.tvCartAdd.setOnClickListener {
             if (dish != null) {
                 addItemCart(dish)
@@ -55,7 +77,6 @@ class DetailFragment : Fragment() {
                 viewModel.updateFavoritedList(dish)
                 favoriteItem(dish)
                 verifyIconFavorite(dish.isFavorite)
-
             }
         }
     }

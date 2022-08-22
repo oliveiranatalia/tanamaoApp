@@ -15,11 +15,11 @@ class CartAdapter(
     class ViewHolder(val binding: CartItemBinding) : RecyclerView.ViewHolder(binding.root) {
         fun showInfo(dish: Dish){
             binding.tvItemTitle.text = dish.name
-            val value = "R$ ${dish.value}"
+            val value = (dish.qtd * dish.value).toString()
             binding.tvItemValue.text = value
-            binding.tvItemQtd.text = "1x"
+            val qtd = "${dish.qtd}x"
+            binding.tvItemQtd.text = qtd
             Picasso.get().load(dish.urlImageProduct).into(binding.ivItemImage)
-
         }
     }
 
